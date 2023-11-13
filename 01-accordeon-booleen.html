@@ -11,15 +11,15 @@
     <h1>Accordéon avec des booléens</h1>
     <div class="accordeon">
       <section x-data="{Open : false}">
-        <button>bouton 1</button>
+        <button @click="Open = !Open">bouton 1</button>
         <p x-show="Open" x-transition.opacity>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro esse perferendis beatae optio nulla vero dolores, quis dicta odit obcaecati facere ipsa, natus, repellat harum iusto. Inventore possimus ipsa temporibus?</p>
       </section>
       <section x-data="{Open : false}">
-        <button>bouton 2</button>
+        <button @click="Open = !Open">bouton 2</button>
         <p x-show="Open" x-transition.opacity>Molestias similique provident iusto eaque earum! Beatae mollitia non natus velit, hic debitis, expedita rerum quis dolore quisquam temporibus dolores optio voluptatum, culpa sunt. Corrupti adipisci libero nulla iste animi?</p>
       </section>
       <section x-data="{Open : false}">
-        <button>bouton 3</button>
+        <button @click="Open = !Open">bouton 3</button>
         <p x-show="Open" x-transition.opacity>Quasi, odit. Reprehenderit molestias maxime facilis ab similique et ipsum nam, doloribus deserunt eum, ducimus distinctio beatae qui ratione nisi suscipit modi a sed quos tempora quis. Consectetur, obcaecati explicabo!</p>
       </section>
     </div>
