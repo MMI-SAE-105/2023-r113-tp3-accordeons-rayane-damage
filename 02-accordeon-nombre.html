@@ -12,15 +12,15 @@
     <div class="accordeon" x-data="{Open : 0}">
       <section>
         <button @click="Open = 1">bouton 1</button>
-        <p x-show="Open === 1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid corrupti tenetur delectus fugit explicabo, quam blanditiis minima optio repellat obcaecati aperiam sapiente officiis nulla architecto temporibus facere eos ab.</p>
+        <p x-show="Open === 1" x-transition.scale.origine.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid corrupti tenetur delectus fugit explicabo, quam blanditiis minima optio repellat obcaecati aperiam sapiente officiis nulla architecto temporibus facere eos ab.</p>
       </section>
       <section>
         <button @click="Open = 2">bouton 2</button>
-        <p x-show="Open === 2">Doloremque architecto maiores omnis ipsa distinctio vitae expedita, nostrum beatae fugiat accusamus sint voluptates unde modi iusto vero! Vel ducimus dolore numquam, et culpa qui commodi illum ad quos fuga!</p>
+        <p x-show="Open === 2" x-transition.scale.origine.top>Doloremque architecto maiores omnis ipsa distinctio vitae expedita, nostrum beatae fugiat accusamus sint voluptates unde modi iusto vero! Vel ducimus dolore numquam, et culpa qui commodi illum ad quos fuga!</p>
       </section>
       <section>
         <button @click="Open = 3">bouton 3</button>
-        <p x-show="Open === 3">Perferendis perspiciatis odit aliquam dolore iusto ab repellendus vitae repudiandae animi dolorum, libero molestiae odio quia, numquam nobis quis dicta labore eligendi? Blanditiis, delectus aliquam consequuntur quos ullam aspernatur deleniti.</p>
+        <p x-show="Open === 3" x-transition.scale.origine.top>Perferendis perspiciatis odit aliquam dolore iusto ab repellendus vitae repudiandae animi dolorum, libero molestiae odio quia, numquam nobis quis dicta labore eligendi? Blanditiis, delectus aliquam consequuntur quos ullam aspernatur deleniti.</p>
       </section>
     </div>
   </body>
