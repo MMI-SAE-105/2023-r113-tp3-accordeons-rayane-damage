@@ -7,20 +7,28 @@
     <title>Accordéon avec x-collapse</title>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      .ouvert
+      {
+        background-color: #ffffff;
+        border: #ffffff;
+        font-weight: 600;
+      }
+    </style>
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
     <div class="accordeon">
       <section x-data="{Open : false}">
-        <button @click="Open =!Open">bouton 1</button>
+        <button @click="Open =!Open" :class="{ouvert : Open}">bouton 1</button>
         <p x-show="Open" x-collapse.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero eveniet natus non repudiandae dolor eos deleniti neque minima necessitatibus nulla rem, quae cupiditate voluptatum iure nisi nam suscipit voluptatem!</p>
       </section>
       <section x-data="{Open : false}">
-        <button @click="Open =!Open">bouton 2</button>
+        <button @click="Open =!Open" :class="{ouvert : Open}">bouton 2</button>
         <p x-show="Open" x-collapse.duration.500ms>Debitis, impedit! Esse reiciendis iusto reprehenderit ipsum! Neque, veniam deleniti! Enim, magnam voluptates. Consequuntur, delectus quibusdam corrupti id consequatur, architecto expedita sequi sint aperiam in vitae aspernatur voluptatum asperiores? Rem?</p>
       </section>
       <section x-data="{Open : false}">
-        <button @click="Open =!Open">bouton 3</button>
+        <button @click="Open =!Open" :class="{ouvert : Open}">bouton 3</button>
         <p x-show="Open" x-collapse.duration.500ms>Nisi necessitatibus iusto nemo natus error ipsam nam aperiam qui fugiat ex repudiandae unde magni, at veritatis a quidem officia ducimus? Odio voluptas illum recusandae itaque! Temporibus eos libero placeat?</p>
       </section>
     </div>
