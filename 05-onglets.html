@@ -12,9 +12,9 @@
     <h1>Onglets</h1>
     <div id="parent" x-data="{isOpen:0}">
       <ul role="tablist">
-        <li role="tab" :class="{actif:isOpen === 1}">Onglet 1</li>
-        <li role="tab" :class="{actif:isOpen === 2}">Onglet 2</li>
-        <li role="tab" :class="{actif:isOpen === 3}">Onglet 3</li>
+        <li @click="isOpen=1" role="tab" :class="{actif:isOpen === 1}">Onglet 1</li>
+        <li @click="isOpen=2" role="tab" :class="{actif:isOpen === 2}">Onglet 2</li>
+        <li @click="isOpen=3" role="tab" :class="{actif:isOpen === 3}">Onglet 3</li>
       </ul>
 
       <div>
