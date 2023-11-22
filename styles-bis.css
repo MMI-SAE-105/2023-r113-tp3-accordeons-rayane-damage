@@ -1,3 +1,8 @@
 .actif{
     background-color: #eee;
 }
+
+[role="tabpanel"]{
+    position: absolute;
+    opacity: 0;
+}

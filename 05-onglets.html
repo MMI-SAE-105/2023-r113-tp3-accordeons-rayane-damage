@@ -10,26 +10,27 @@
   </head>
   <body>
     <h1>Onglets</h1>
-    <ul role="tablist">
-      <li role="tab"class="actif">Onglet 1</li>
-      <li role="tab">Onglet 2</li>
-      <li role="tab">Onglet 3</li>
-    </ul>
-    <section>
+    <div id="parent">
+      <ul role="tablist">
+        <li role="tab"class="actif">Onglet 1</li>
+        <li role="tab">Onglet 2</li>
+        <li role="tab">Onglet 3</li>
+      </ul>
+
       <div>
         <div role="tabpanel" x-show="ouvert === 1">
-          <h1>Panneau 1</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a odio optio exercitationem temporibus reiciendis, tempora, recusandae suscipit ipsum libero quidem voluptas eaque reprehenderit iste voluptatum, placeat commodi quasi neque!</p>
+          <h1 class="child">Panneau 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a odio optio exercitationem temporibus reiciendis, tempora, recusandae suscipit ipsum libero quidem voluptas eaque reprehenderit iste voluptatum, placeat commodi quasi neque!</p>
         </div>
         <div role="tabpanel" x-show="ouvert === 2">
-          <h1>Panneau 2</h1>
+           <h1 class="child">Panneau 2</h1>
           <p>Incidunt eos magnam, eaque unde doloribus et sequi nobis voluptatibus voluptates hic deserunt totam harum, veniam quisquam, soluta aut ipsa quos perspiciatis! Ex, quia explicabo. Veritatis harum voluptate doloremque a!</p>
         </div>
         <div role="tabpanel" x-show="ouvert === 3">
-          <h1>Panneau 3</h1>
+          <h1 class="child">Panneau 3</h1>
           <p>Qui ea consequatur labore aut animi voluptatum dolorum quia numquam, ipsam aperiam maxime tempore officiis repudiandae veritatis quisquam excepturi iste repellat tenetur eum delectus, minima nam hic. Porro, laudantium consectetur!</p>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
