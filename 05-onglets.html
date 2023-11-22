@@ -10,15 +10,15 @@
   </head>
   <body>
     <h1>Onglets</h1>
-    <div id="parent" x-data="{isOpen:0}">
+    <div id="parent" x-data="{ouvert:0}">
       <ul role="tablist">
-        <li @click="isOpen=1" role="tab" :class="{actif:isOpen === 1}">Onglet 1</li>
-        <li @click="isOpen=2" role="tab" :class="{actif:isOpen === 2}">Onglet 2</li>
-        <li @click="isOpen=3" role="tab" :class="{actif:isOpen === 3}">Onglet 3</li>
+        <li @click="ouvert=1" role="tab" :class="{actif:ouvert === 1}">Onglet 1</li>
+        <li @click="ouvert=2" role="tab" :class="{actif:ouvert === 2}">Onglet 2</li>
+        <li @click="ouvert=3" role="tab" :class="{actif:ouvert === 3}">Onglet 3</li>
       </ul>
 
       <div>
-        <div role="tabpanel" x-show="ouvert === 1" class="panel-actif" >
+        <div role="tabpanel" x-show="ouvert === 1">
           <h1>Panneau 1</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a odio optio exercitationem temporibus reiciendis, tempora, recusandae suscipit ipsum libero quidem voluptas eaque reprehenderit iste voluptatum, placeat commodi quasi neque!</p>
         </div>
