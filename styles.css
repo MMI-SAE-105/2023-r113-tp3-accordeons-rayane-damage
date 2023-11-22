@@ -9,7 +9,9 @@
 
 #accordeon li {
     /* largeur de chaque élément replié 107px */
+    width: 107px;
     /* pour cacher le contenu dépassant de l'élément */
+    overflow: hidden;
     /* pour l'animation, transition sur width */
     /* couleur de fond #eee */
     /* pour enlever les puces */
