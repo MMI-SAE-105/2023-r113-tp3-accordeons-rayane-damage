@@ -42,10 +42,13 @@
 
 #accordeon li figure figcaption {
     /* largeur du texte de 200px */
+    width: 200px;
     /* pour espacer le texte, padding de 10px */
+    padding: 10px;
     /* pour que les éléments soient alignés verticalement */
-   
+    display: flex;
     /* espace entre les éléments */
+    justify-content: start;
 }
 
 /* Sur tous les enfants de figcation */
