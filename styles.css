@@ -33,8 +33,11 @@
 
 #accordeon li figure {
     /* pour éviter les marges par défaut */
+    margin: 0;
     /* pour que les éléments soient alignés horizontalement */
+    display: flex;
     /* largeur de l'élément intrérieur de 317px (= déplié) */
+    
 }
 
 #accordeon li figure figcaption {
