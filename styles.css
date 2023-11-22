@@ -28,6 +28,7 @@
 
 #accordeon li.actif {
     /* largeur de l'élément déplié 317px */
+    width: 317;
 }
 
 #accordeon li figure {
