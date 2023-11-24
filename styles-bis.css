@@ -1,5 +1,7 @@
-.actif{
-    background-color: #eee;
+#parents {
+    position: relative;
+    width: auto;
+    height: 150;
 }
 
 [role="tabpanel"]{
@@ -7,6 +9,12 @@
     opacity: 0;
 }
 
-.panelactif{
+.actif[role="tabpanel"]{
     opacity: 1;
 }
+
+.actif{
+    background-color: #eee;
+}
+
+
